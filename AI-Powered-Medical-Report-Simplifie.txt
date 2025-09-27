@@ -1,0 +1,5 @@
+AI-Powered-Medical-Report-Simplifier
+
+1. GITHUB Link: https://github.com/SYT20/AI-Powered-Medical-Report-Simplifier
+2. After running test the backend at http://127.0.0.1:8000/docs#/
+3. Video Implementation Link: https://drive.google.com/drive/folders/1heRA-BAxtjfMLI-b1PlAQbTFa4t1aNzw?usp=sharing

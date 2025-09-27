@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
-load_dotenv() 
+load_dotenv()
 
+import uvicorn
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
 from pathlib import Path
@@ -14,6 +15,11 @@ from .ocr import (
 from .gemini_client import call_gemini_generate
 
 app = FastAPI(title="AI Medical Report OCR")
+
+
+@app.on_event("startup")
+async def startup_event():
+    print("Test the backend at http://127.0.0.1:8000/docs#/default/process_image_process_image_post")
 
 
 @app.post("/process-image")
@@ -48,3 +54,9 @@ async def process_image(file: UploadFile = File(...)):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+if __name__ == "__main__":
+    print("Starting the FastAPI server...")
+    print("Test the backend at http://127.0.0.1:8000/docs#/default/process_image_process_image_post")
+    uvicorn.run(app, host="127.0.0.1", port=8000)
