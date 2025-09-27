@@ -105,9 +105,9 @@ sudo apt-get install tesseract-ocr
 
    The API will be available at `http://localhost:8000`
 
-6. **Verify installation:**
+6. **Test the backend:**
 
-   Visit `http://localhost:8000/docs` to see the interactive API documentation.
+   Visit `http://127.0.0.1:8000/docs#/` to access the interactive API documentation and test the endpoints directly in your browser.
 
 ## API Usage
 
