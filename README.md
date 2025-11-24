@@ -12,7 +12,7 @@ Plum2 is a FastAPI-based web service that uses optical character recognition (OC
 - **Patient-Friendly Output**: Creates easy-to-understand explanations of results
 
 ## Architecture
-![alt text](Pipline.png)
+![alt text](Pipline_Architecture.png)
 The application follows a modular architecture with four main processing stages:
 
 ### Core Components
